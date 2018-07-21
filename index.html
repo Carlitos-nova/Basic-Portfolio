@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About | Carlitos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="main.js"></script>
 </head>
 <body>
 
-    <header id="masterplan">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
         <div class="container">
-            <a href="index.html" id="logo">Carlitos</a>
-                <nav>
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" id="logo">Carlitos</a>
+            </div>
+            <button class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="page-nav-collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
             
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>About Me</h1>
-            
-            <img src="assets/images/Carlitos_Profile.jpg" class="next-image" alt="Carlitos">
-            
-            <p>My name is Carlitos de Castro, I am 18 years old and I'm learning to be a full time web developer. My history of learning how to code started when I was 13 years old when I started to use a website called scratch as a fun coding game to play as my free time. Then I improved on my coding skills during my high school years as I started to do Microsoft C, JavaScript, and Adobe Actionscript</p>
-            
-            <p>My Hobbies and Interest are playing video games like shooters or role-playing games. Other things I like is watching or building custom personal computers.</p>
-            
+    <main class="container">
+        <section class="row">
+            <div class="col-md-8">
+                <article class="block">
+                    <h1 class="block-header">About Me</h1>
+                    <hr />
+                    <img src="assets/images/Carlitos_Profile.jpg" id="about-image" alt="Carlitos">
+                    <p>My name is Carlitos de Castro, I am 18 years old and I'm learning to be a full time web developer. My history
+                    of learning how to code started when I was 13 years old when I started to use a website called scratch as a fun
+                    coding game to play as my free time. Then I improved on my coding skills during my high school years as I started
+                    to do Microsoft C, JavaScript, and Adobe Actionscript</p>
+                    <br />
+                    <p>My Hobbies and Interest are playing video games like shooters or role-playing games. Other things I like is
+                    watching or building custom personal computers.</p>
+                </article>
+            </div>
         </section>
+    </main>
             
-    </div>
-            
-    <footer>
-        <div class="container">
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
             Copyright &copy; Carliltos 2018
-        </div>
+        </p>
     </footer>
-    
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
 </body>
 </html>
